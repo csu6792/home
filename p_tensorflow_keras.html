@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tensorflow Keras</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="python.html">首頁</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>選單</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">首頁</a></li>
+											<!--<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>-->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Tensorflow Keras</h2>
+							<p>相關應用教學 圖像分類</p>
+							<ul class="actions special">
+								<li><a href="python.html" class="button fit">首頁</a></li>
+							</ul>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+							
+								<h3>Tensorflow Keras介紹</h3>
+								<pre><code>Keras是一個以tensorflow為背後引擎的模組讓我們可以快速建立一個影像辨識的資料來使用</code></pre>
+								<hr />
+								
+								<h3>Tensorflow Keras介紹</h3>
+								<pre><code>y = activation function(x * w + b)</code></pre>
+								<pre><code>x 是神經元的輸入值，y 是輸出，w 是權重(weight)，b 是偏差(bias)，一開始模型在建立時，w 跟 b 都是取 random 值，訓練的目的就是替每個神經元找到最事宜的 w 跟 b</code></pre>
+								<pre><code>activation function通常使用relu</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/tensorflow_keras_1.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>Keras CNN模型</h3>
+								<pre><code>CNN主要架構分為 卷積層 池化層 平坦層 隱藏層 輸出層</code></pre>
+								<pre><code>卷積層:將輸入的照片運用類似16種的濾鏡的效果將特徵取出</code></pre>
+								<pre><code>池化層:將卷積層後的照片進行縮小</code></pre>
+								<pre><code>平坦層:將照片的陣列展開成1維</code></pre>
+								<pre><code>隱藏層:銜接平坦層神經</code></pre>
+								<pre><code>輸出層:依據辨識種類數量設定</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/tensorflow_keras_2.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<pre><code>卷積層跟池化層主要差異:卷積層就是增加照片數量大小不變 池化層就是大小改變照片數量不變</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/tensorflow_keras_3.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<pre><code>平坦層架構(分為1維)</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/tensorflow_keras_4.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								
+								<h3>python建立模型</h3>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/tensorflow_keras_5.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/tensorflow_keras_6.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>二分法與多元分類</h3>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/tensorflow_keras_7.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>Keras相關資料查詢</h3>
+								<li><a href="https://keras.io/getting_started/" target="_blank" class="button fit">doc Keras</a></li>
+								<hr />
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a>6792@gcloud.csu.edu.tw</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="#">6792</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
