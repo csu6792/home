@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Pyqt5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="python.html">首頁</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>選單</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">首頁</a></li>
+											<!--<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>-->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Pyqt5</h2>
+							<p>相關應用教學 結合opencv tensorflow keras..</p>
+							<ul class="actions special">
+								<li><a href="python.html" class="button fit">首頁</a></li>
+							</ul>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								
+								<h3>安裝模組</h3>
+								<pre><code>使用cmd或gitbash輸入指令進行模組安裝</code></pre>
+								<pre><code>pip install PyQt5 PyQt5-tools</code></pre>
+								<pre><code>執行designer.exe</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_1.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>designer 設計</h3>
+								<pre><code>designer.exe 介面</code></pre>
+								<pre><code>設計完成後利用左上角檔案進行存檔 *將儲存成.ui檔案*</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_2.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>UI檔案轉換</h3>
+								<pre><code>透過cmd或gitbash輸入指令將.ui檔案轉換為.py *此步驟為了將介面與程式邏輯分離 在轉換前先確定路徑為.ui所在的資料夾*</code></pre>
+								<pre><code>pyuic5 -o ui_main_window.py ui_main_window.ui</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_2.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>UI檔案使用</h3>
+								<pre><code>將UI檔案轉換後的py利用另一個的邏輯程式進行呼叫</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_3.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>按鈕控制</h3>
+								<pre><code>將按鈕連結到指定函式</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_4.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>加入迴圈</h3>
+								<pre><code>不斷重複執行某個指定程式</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_5.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>整合OpenCV影像讀取</h3>
+								<pre><code>OpenCV 相關模組安裝與教學請參考OpenCV教學</code></pre>
+								<pre><code>使用designer UI設計新增一個300*300大小的label</code></pre>
+								<pre><code>將鏡頭讀取邏輯程式放置於迴圈裡並轉換影像顯示在label上</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_6.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>整合Tensorflow Keras影像分類辨識</h3>
+								<pre><code>Tensorflow 相關模組安裝與教學請參考Tensorflow教學</code></pre>
+								<pre><code>引用Tensorflow Keras相關模組</code></pre>
+								<pre><code>將辨識結果顯示</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_7.png" alt="" /></span></div>
+								<div class="col-8"><span class="image fit"><img src="images/pyqt5_8.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>pyqt5相關資料查詢</h3>
+								<li><a href="https://www.tutorialspoint.com/pyqt5/pyqt5_quick_guide.htm" target="_blank" class="button fit">tutorialspoint pyqt5</a></li>
+								<li><a href="https://doc.qt.io/qtforpython/" target="_blank" class="button fit">doc pyqt5</a></li>
+								<hr />
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a>6792@gcloud.csu.edu.tw</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="#">6792</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

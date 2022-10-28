@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Raspberry PI 介紹與系統安裝</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">首頁</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>選單</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">首頁</a></li>
+											<!--<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>-->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Raspberry PI 介紹與系統安裝</h2>
+							<p>相關應用教學</p>
+							<ul class="actions special">
+								<li><a href="index.html" class="button fit">首頁</a></li>
+							</ul>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								
+								<h3>介紹</h3>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/raspberry_0.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>作業系統安裝(windows 需準備SD卡建議16GB以上)</h3>
+								<pre><code>至官網下載最新作業系統 RASPBIAN STRETCH WITH DESKTOP(有桌面環境)</code></pre>
+								<a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" class="button fit primary">下載作業系統</a>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/raspberry_1.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<pre><code>使用SD Card Formatter將記憶卡格式化</code></pre>
+								<a href="https://www.sdcard.org/downloads/formatter/" target="_blank" class="button fit primary">下載SD Card Formatter</a>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/raspberry_2.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<pre><code>將RASPBIAN STRETCH WITH DESKTOP zip檔解壓縮 並使用Win32DiskImager 將ISO檔讀取到記憶卡</code></pre>
+								<a href="#" target="_blank" class="button fit primary">下載Win32DiskImager(更新中...)</a>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/raspberry_3.png" alt="" /></span></div>
+								</div>
+								</div>
+								<h3>備份記憶卡內作業系統到電腦(選用)</h3>
+								<pre><code>選擇映像檔路徑並命名檔案 並點選下方資料到裝置的按鈕</code></pre>
+								<hr />
+								
+								<h3>開啟raspberry pi遠端登入權限與設定wifi連線</h3>
+								<pre><code>透過檔案管理在記憶卡新增2個檔案</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/raspberry_4.png" alt="" /></span></div>
+								</div>
+								</div>
+								<pre><code>開啟wpa_supplicant.conf 新增以下內容 其中 ssid代表自己的熱點名稱 psk為熱點密碼</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/raspberry_5.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>相關應用工具介紹</h3>
+								
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/raspberry_6.png" alt="" /></span></div>
+								<h4>putty</h4>
+								<pre><code>輸入樹莓派ip位置選擇open 帳號預設為pi 密碼預設為raspberry 可以透過此程式下指令 執行程式等
+								</code></pre>
+								</div>
+								<a href="https://www.putty.org/" target="_blank" class="button fit primary">下載putty</a>
+								<hr />
+								
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/raspberry_7.png" alt="" /></span></div>
+								<h4>Vnc viewer</h4>
+								<pre><code>透過putty輸入vncserver指令 完成後會顯示(xxx.xxx.xxx.x:1) 在vncviewer上方網址列輸入xxx.xxx.xxx.x:1 並enter 
+								</code></pre>
+								<pre><code>帳號預設為pi 密碼預設為raspberry 可以透過此程式可以顯示樹莓派遠端桌面及控制
+								</code></pre>
+								</div>
+								<a href="https://www.realvnc.com/en/connect/download/viewer/" target="_blank" class="button fit primary">下載Vnc viewer</a>
+								<hr />
+								
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-4"><span class="image fit"><img src="images/raspberry_8.png" alt="" /></span></div>
+								<h4>Winscp</h4>
+								<pre><code>在winscp主機名稱輸入ip位置 使用者名稱預設為pi 密碼預設為raspberry 可以透過此程式可以讓電腦及樹莓派透過拖移方式進行檔案互相傳輸
+								</code></pre>
+								</div>
+								</div>
+								<a href="https://winscp.net/eng/download.php" target="_blank" class="button fit primary">下載Winscp</a>
+								
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a>6792@gcloud.csu.edu.tw</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="#">6792</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
