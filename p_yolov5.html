@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>yolov5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="python.html">首頁</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>選單</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">首頁</a></li>
+											<!--<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>-->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>yolov5</h2>
+							<p>模型訓練相關應用教學 物件偵測</p>
+							<ul class="actions special">
+								<li><a href="python.html" class="button fit">首頁</a></li>
+							</ul>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								
+								<h3>訓練模型(yolov5s.pt)</h3>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_1.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>標記圖片</h3>
+								<pre><code>下載圖片標記工具 labelImg</code></pre>
+								<a href="https://tzutalin.github.io/labelImg/" target="_blank" class="button fit primary">下載labelImg</a>
+								<hr />
+								
+								<h3>labelImg 使用</h3>
+								<pre><code>將格式設定為yolo 將要辨識的物件進行標記並設定物件名稱後存檔</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_2.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>相關檔案設定</h3>
+								<pre><code>yaml檔案設定 設定labelImg標記後的名稱(要辨識的物件名稱)</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_3.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>檔案壓縮及上傳</h3>
+								<pre><code>kaggle 相關教學請參考kaggle教學</code></pre>
+								<pre><code>壓縮zip後檔案上傳到kaggle</code></pre>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_4.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								<h3>訓練模型</h3>
+								<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_5.png" alt="" /></span></div>
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_6.png" alt="" /></span></div>
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_7.png" alt="" /></span></div>
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_8.png" alt="" /></span></div>
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_9.png" alt="" /></span></div>
+								<div class="col-8"><span class="image fit"><img src="images/yolov5_10.png" alt="" /></span></div>
+								</div>
+								</div>
+								<hr />
+								
+								
+								<h3>安裝yolov5及測試模型</h3>
+								<pre><code>使用cmd或gitbash輸入指令進行模組安裝</code></pre>
+								<pre><code>pip install torch torchvision torchaudio</code></pre>
+								<pre><code>下載程式庫 https://github.com/ultralytics/yolov5</code></pre>
+								<pre><code>yolov5資料夾打開detect.py 辨識主程式 將151的yolov5s.pt改成剛剛下載的best.pt (使用自己訓練的模型) 將152的inference/images改成0 (使用鏡頭)</pre></code>
+								<hr />
+								
+								
+								<h3>yolov5相關資料查詢</h3>
+								<li><a href="https://github.com/ultralytics/yolov5" target="_blank" class="button fit">github yolov5</a></li>
+								<hr />
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a>6792@gcloud.csu.edu.tw</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="#">6792</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
